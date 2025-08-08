@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//1°) questão
+	int cenouras;
+	cenouras = 25; //faltou ponto e virgula
+
+	cout << "Eu tenho " << cenouras << " cenouras.\n"; //a variavel cenouras estava dentro das aspas
+
+	cenouras = cenouras - 1;
+	cout << "Agora eu tenho " << cenouras << " cenouras." << endl; //uma variavel inexistente estava no lugar.
+
+
+	//2°)
+
+	int dias;
+	cout << "Numero de dias: ";
+	cin >> dias;
+
+	int horas = dias * 60;
+	cout << dias << " dias tem " << horas << " horas." << endl;
+	//não tem erro de compilação, mas a lógica está errada. 
+	return 0;
+}
